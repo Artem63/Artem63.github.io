@@ -1,0 +1,43 @@
+/**/
+body {
+	margin: 0px;
+}
+
+.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		/*https://css-tricks.com/almanac/properties/a/animation/*/
+		animation: pulse 10s infinite;
+}
+/* здесь продолжение свойства animation. это обязательно для свойства*/
+@keyframes pulse {
+  0% {
+    background-color: #0843535; 
+  }
+  100% {
+    background-color: #F9D0D0;
+  }
+}
+
+h1 {
+	font-family: Georgia;
+	font-size: 3em;
+	border-bottom: 2px solid pink;
+	border-right: 2px solid pink;
+	width: 400px;
+	text-align: center;
+	margin-top: 10px;
+	box-shadow: 4px 4px 5px #888888;
+}
+
+img {
+	width: 450px;
+	height: 300px;
+	margin: 10px;
+	transition: all 0.8s;
+}
+
+img:hover {
+	transform: scale(1.2);
+}
